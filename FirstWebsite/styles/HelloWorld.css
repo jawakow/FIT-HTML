@@ -56,12 +56,19 @@ p:hover{
   div.scrollmenu a:hover {
     background-color: #777;
   }
+  
   #donate{
     animation: blinker 1s linear infinite;
-    font-size: 26px;
+    font-size: 30px;
   }
+  
   @keyframes blinker {
     50% {
       opacity: 0;
     }
+  }
+
+  img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
   }
