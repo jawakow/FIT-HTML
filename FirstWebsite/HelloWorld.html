@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- This is the header info-->
+    <!-- Author: Lukasz Kubisz 13/05/2019-->
+    <link rel="stylesheet" type="text/css" href="styles\HelloWorld.css">
+    <title> Programing and trading </title>
+    
+</head>
+<body>
+    <h1>Intro</h1>
+    <div class="scrollmenu">
+            <a href="https://www.mql5.com/">MQL5 News</a>
+            <a href="https://github.com/jawakow">GitHub repos</a>
+            <a href="#yt">Supply/Demand  foundations</a>
+            <a id="donate" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=jawakow@gmail.com&lc=US&item_name=Donation+to+keep+projects+under+constant+development&no_note=10000&cn=&currency_code=EUR&bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted">Donate</a>
+            <a href="#currentProjects">Current projects</a>
+            <a href="#tradingView">Live Charts</a>
+          </div>
+    
+    <hr>     
+    <b>Designing algos is not easy and also involves deep C++ learning. Recent version of MQL5 language now allows to import DLLs directly into a code without marshaling. Also, WinAPI is fully supported. 
+    For more information please go to the MQL5 website <a href="https://www.mql5.com/">mql5.com</a>
+    </b>
+    <hr>
+    <img id="chart" src="../images/chris-liverani-552649-unsplash.jpg" alt="Chart" style="width:25%;height:auto;"/>
+
+    <hr>
+
+    <p>Learning resources</p>
+
+    <iframe id="yt" width="424" height="238" src="https://www.youtube.com/embed/sACZl9TfX3I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <div class="MQL">
+    <p id="currentProjects">Current MQL5 projects </p>
+    <ul>
+        <li>Supply/demand indicator</li>
+        <li>Charts linking library</li>
+        <li>Support/resistance indy</li>
+        <li>High frequency trading algos for S&P500 future</li>
+    </ul>
+    </div>
+
+    <p>Other Non-MQL5 projects</p>
+    
+    <ol>
+        <li>Integrate .NET with MQL</li>
+        <li>Develop wrapper for Oanda API</li>   
+    </ol>
+    
+    <p id ="Ami">AmiBroker plugins development</p>
+    
+    <ol>
+        <li>Real-time data plugin using Oanda API</li>
+    </ol>
+
+    <p>After work a little treat is badly deserved</p>
+
+    <iframe src="https://giphy.com/embed/OZvMMeKdYmPpS" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/video-bike-tricks-OZvMMeKdYmPpS"></a></p>
+     
+
+    <hr>
+    <p>
+            <button id="button" type="button" onclick="window.location.href='https://github.com/jawakow';">Click to download a code...</button>
+        </p>
+        <!-- TradingView Widget BEGIN -->
+    <div id="tradingView" class="tradingview-widget-container" style="float:left;">
+        <div id="tradingview_e272d"></div>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/CME_MINI-MES1!/" rel="noopener" target="_blank"><span class="blue-text">MES1! Chart</span></a> by TradingView</div>
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <script type="text/javascript">
+        new TradingView.widget(
+        {
+        "autosize": false,
+        "symbol": "CME_MINI:ES1!",
+        "interval": "D",
+        "timezone": "Etc/UTC",
+        "theme": "Dark",
+        "style": "1",
+        "locale": "en",
+        "toolbar_bg": "#f1f3f6",
+        "enable_publishing": false,
+        "allow_symbol_change": true,
+        "container_id": "tradingview_e272d"
+    }
+        );
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+    
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+body{
+    background-color: lightgray;
+    font-size: 18px;
+}
+
+h1{
+    font-size: 2cm ;
+    color: darkgreen ;
+    border: 1cm;
+    text-align: center;
+    text-shadow: 2px 2px;
+}
+P{
+    font-size: 1cm;
+    color: darkred;
+    text-align: center;
+    text-shadow: 2px 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.MQL{
+    font-stretch: condensed;
+    color: rgb(219, 28, 37);
+}
+#Ami{
+    font-size: 1cm;
+    text-align: center;
+    
+}
+#chart{
+
+}
+p:hover{
+    color: black;
+    
+}
+#button{
+    padding: 15px 32px;
+    background-color: rgb(161, 69, 69) ; 
+    text-decoration: brown;
+    font-size: 18px
+}
+  div.scrollmenu {
+    background-color: rgb(56, 12, 12);
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  div.scrollmenu a:hover {
+    background-color: #777;
+  }
+  #donate{
+    animation: blinker 1s linear infinite;
+    font-size: 26px;
+  }
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
