@@ -4,11 +4,20 @@
     <!-- This is the header info-->
     <!-- Author: Lukasz Kubisz 13/05/2019-->
     <link rel="stylesheet" type="text/css" href="styles\HelloWorld.css">
+    
+    <script type="text/javascript" src="http://developer.oanda.com/oandajs/oanda.js"></script>
+    <script src="v20-javascript\src\account.js"></script>
+    <script src="v20-javascript\src\context.js"></script>
+    <script src="scripts\scripts.js"></script>
+    
     <title> Programing and trading </title>
     
 </head>
-<body>
+<body onload="refreshTime()">
     <h1>Intro</h1>
+    <p>
+        <input id="clock" type="text">
+    </p>
     <div class="scrollmenu">
             <a href="https://www.mql5.com/">MQL5 News</a>
             <a href="https://github.com/jawakow">GitHub repos</a>
@@ -16,14 +25,14 @@
             <a id="donate" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=jawakow@gmail.com&lc=US&item_name=Donation+to+keep+projects+under+constant+development&no_note=10000&cn=&currency_code=EUR&bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted">Donate</a>
             <a href="#currentProjects">Current projects</a>
             <a href="#tradingView">Live Charts</a>
-          </div>
+    </div>
     
     <hr>     
     <b>Designing algos is not easy and also involves deep C++ learning. Recent version of MQL5 language now allows to import DLLs directly into a code without marshaling. Also, WinAPI is fully supported. 
     For more information please go to the MQL5 website <a href="https://www.mql5.com/">mql5.com</a>
     </b>
     <hr>
-    <img id="chart" src="../images/chris-liverani-552649-unsplash.jpg" alt="Chart" style="width:25%;height:auto;"/>
+    <img id="chart" src="images\MESM19M15.png" alt="Chart" style="width:auto;height:auto;"/>
 
     <hr>
 
@@ -61,32 +70,16 @@
 
     <hr>
     <p>
-            <button id="button" type="button" onclick="window.location.href='https://github.com/jawakow';">Click to download a code...</button>
-        </p>
-        <!-- TradingView Widget BEGIN -->
-    <div id="tradingView" class="tradingview-widget-container" style="float:left;">
-        <div id="tradingview_e272d"></div>
-        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/CME_MINI-MES1!/" rel="noopener" target="_blank"><span class="blue-text">MES1! Chart</span></a> by TradingView</div>
-        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-        <script type="text/javascript">
-        new TradingView.widget(
-        {
-        "autosize": false,
-        "symbol": "CME_MINI:ES1!",
-        "interval": "D",
-        "timezone": "Etc/UTC",
-        "theme": "Dark",
-        "style": "1",
-        "locale": "en",
-        "toolbar_bg": "#f1f3f6",
-        "enable_publishing": false,
-        "allow_symbol_change": true,
-        "container_id": "tradingview_e272d"
-    }
-        );
-        </script>
-    </div>
-    <!-- TradingView Widget END -->
+        <button id="butTime" type="button" onmousemove="onTimeClicked()">Get UNIX Epoch time</button>
+        <input id="butCheck" type="button" value="Check Donation Status" onclick="onCheckDonationClicked()"/>    
+        <input id="butSP" type="button" value="Check S&P 500 price" ondblclick="onCheckSPClicked()"/>  
+              
+    </p>
+    <p>
+        <input id="butAuthorization" type="button" value="Authorization Request" onclick="onAuth()"/>    
+        <input id="txtBalance" type="text" value="0"/>       
+    </p>
+      
     
 
     

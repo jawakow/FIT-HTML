@@ -33,12 +33,21 @@ p:hover{
     color: black;
     
 }
-#button{
+ #butCode, #butCheck, #butSP, #butTime{
     padding: 15px 32px;
     background-color: rgb(161, 69, 69) ; 
     text-decoration: brown;
     font-size: 18px
 }
+#butAuthorization, #txtBalance{
+  padding: 15px 32px;
+  background-color: rgb(18, 195, 201) ; 
+  text-decoration: brown;
+  font-size: 24px;
+  text-align: center;
+  
+}
+
   div.scrollmenu {
     background-color: rgb(56, 12, 12);
     overflow: auto;
@@ -67,8 +76,9 @@ p:hover{
       opacity: 0;
     }
   }
-
+  /*
   img:hover {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
   }
+  */
