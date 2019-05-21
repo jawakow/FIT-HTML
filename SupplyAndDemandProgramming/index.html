@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" type="text/css" href="styles\index.css">
+        <script src="libs/jquery-3.4.1.js"></script>
+        <script src="scripts/script.js"></script>
     </head>
 
     <body>
@@ -25,13 +27,14 @@
         </p>
 
         <h2> How to identify supply zones</h2>
-        <p>
+        <p id ="txtIntentify">
             Usually price will drop after a period of consolidation like on the ares marked by solid areas. We assume that not all sellers got filled and there is still interest in that level. Lets go over few components of valid supply zone:
 
             
         </p>
-        <img src="images/EPM19H1.png" height="auto" width="100%">   
-
+        <img id="imgChart"src="images/EPM19H1.png" height="auto" width="100%">   
+        <br>
+        <input id="btnSwitchChart" type="button" value="Switch chart"/> 
     
     </body>
 </html>
