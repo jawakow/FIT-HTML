@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" type="text/css" href="styles\index.css">
         <script src="libs/jquery-3.4.1.js"></script>
+        <script src="libs/jQueryRotate.js"></script>
         <script src="scripts/script.js"></script>
     </head>
 
@@ -16,6 +17,7 @@
             <a href="brokerage.html" class="w3-bar-item w3-button">Brokerage</a>
             <a href="#" class="w3-bar-item w3-button">Markets</a>
             <a href="#" class="w3-bar-item w3-button">MQL5 Programming</a>
+            <a href="play.html" class="w3-bar-item w3-button">Learn & Play</a>
         </div> 
         
         <h1>Intro</h1>
@@ -32,9 +34,15 @@
 
             
         </p>
-        <img id="imgChart"src="images/EPM19H1.png" height="auto" width="100%">   
+        
         <br>
-        <input id="btnSwitchChart" type="button" value="Switch chart"/> 
-    
+        <div class = "button">
+            <input id="btnHideChart" type="button" value="Hide chart"/> 
+            <input id="btnMoveLeft" type="button" value="Move chart to the left"/>
+            <input id="btnMoveRight" type="button" value="Move chart to the right"/>
+            <input id="btnBounce" type="button" value="Bounce chart"/>
+        </div>
+        <br>
+        <img id="imgChart"src="images/EPM19H1.png" height="auto" width="100%">   
     </body>
 </html>

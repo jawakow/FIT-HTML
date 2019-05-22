@@ -4,10 +4,16 @@ body
     margin-right: 200px;
     margin-left: 200px;
 }
-#btnSwitchChart
+.button
 {
-    padding: 15px 32px;
-    margin-top: 20px;
+    
+    margin-bottom: 50px;
     display: inline-block;
-    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+#imgChart
+{
+    position:absolute;
+   
+    height:200px;width:200px
 }
