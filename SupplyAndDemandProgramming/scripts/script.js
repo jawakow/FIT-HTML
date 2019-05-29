@@ -1,3 +1,4 @@
+/// <reference path="../typings/globals/jquery/index.d.ts" />
 // Javascript code can be added here
 //var isHidden
 // Selector syntax in as follows
@@ -5,6 +6,8 @@
 var rotation = 0;
 $(document).ready(function()
 {
+    $("#menu").load("menu.xhtml")
+    
     // This mean that the following instruction will be
     // loaded when the document has finished building
     // the DOM and is ready for accessing
